@@ -1,17 +1,8 @@
 import React, { useState } from 'react'
 import Btn from './Btn'
-
+import Magnet from './Magnet'
 const Navbar = ({ openMenufunc, openMenu }) => {
-    function handleMouseMove(e) {
-        let postion = e.target.getBoundingClientRect();
-        let x = e.pageX - postion.left - postion.width / 2;
-        let y = e.pageY - postion.top - postion.height / 2;
-        e.target.style.transform = `translate(${x * 0.3}px,${y * 0.3}px)`
-    }
-    function handlemouseLeave(e) {
 
-        e.target.style.transform = ``
-    }
 
     function handlemenu(e) {
         openMenufunc(!openMenu)
@@ -25,9 +16,14 @@ const Navbar = ({ openMenufunc, openMenu }) => {
                     <Btn name={"about"} />
 
                 </ul>
-                <div className=' transition-transform duration-150 mt-2 font-odibee  text-2xl'>
-                    <a href="#" onMouseMove={handleMouseMove} onMouseLeave={handlemouseLeave} className='inline-block transition-transform duration-150'> BasheerDev.</a>
-                </div>
+                {/*  */}
+
+                <Magnet padding={100} disabled={false} magnetStrength={8}>
+                    <div className=' transition-transform duration-150 mt-2 font-odibee  text-2xl'>
+                        <a href="index.html"> BasheerDev.</a>
+                    </div>
+
+                </Magnet>
                 <ul className='flex gap-4 items-center text-[14px] font-[mintGrotesk] font-bold max-md:hidden'>
                     <Btn name={"instagram"} />
                     <Btn name={"email"} />

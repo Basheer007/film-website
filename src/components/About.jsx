@@ -1,6 +1,9 @@
 import React from 'react'
+// @ts-ignore
 import mountain from "../assets/mountain.jpeg"
+// @ts-ignore
 import iceMountain from "../assets/ice-mountain.jpeg"
+// @ts-ignore
 import sleepingGirl from "../assets/girl.jpg"
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -18,7 +21,7 @@ const About = () => {
                     <h1 className=' align-baseline about-text'>began <span className='dot inline-block'>.</span><span className='dot inline-block'>.</span><span className='dot inline-block'>.</span><img src={sleepingGirl} className='w-[100px] rounded-lg inline-block align-baseline mx-4 md:w-[120px] hover:scale-[3] transition-transform hover:rotate-[15deg] filter blur-[1px] hover:blur-0 duration-1000  ' alt="moutain" /></h1>
                 </div>
                 <div className='text-center px-11 text-css font-[mintGrotesk]'>
-                    Basheer Ahamed (Basheerahamed1n@gmail.com) is an outdoor, travel, and commercial photographer, filmmaker, and storyteller from the Dolomites in India. Her work focuses on capturing wild and rugged landscapes with a vivid color palette and dreamy elements. Her love for photography has spilled over into filmmaking which is one of the main creative outlets she pursues today.
+                    Basheer Ahamed (Basheerahamed1n@gmail.com) is an outdoor, travel, and commercial photographer, filmmaker, and storyteller from the Dolomites in India. His work focuses on capturing wild and rugged landscapes with a vivid color palette and dreamy elements. His love for photography has spilled over into filmmaking which is one of the main creative outlets she pursues today.
                 </div>
             </div>
 
